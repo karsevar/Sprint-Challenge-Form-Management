@@ -13,17 +13,17 @@ describe('RecipeCard', () => {
 
       const comp = render(<RecipeCard recipes={recipeArray} />)
       const recipe = comp.getAllByTestId('recipe');
-      expect(recipe).toHaveLength(recipeArray.length);
+      expect(recipe).toHaveLength(3);
   });
 
   it('Should render the correct props information', () => {
-    const recipeArray = [
+    const recipe = [
       {name: 'Brisket', course: 'Main', technique:'sous-Vide', ingredients: ['meat', 'salt']}
     ];
     
-    const comp = render(<RecipeCard recipes={recipeArray} />)
+    const comp = render(<RecipeCard recipes={recipe} />)
     comp.getByText(/Brisket/);
     comp.getByText(/Main/);
     comp.getByText(/sous-Vide/);
-  })
-})
+  });
+}); 
