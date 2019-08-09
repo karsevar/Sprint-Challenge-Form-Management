@@ -4,21 +4,21 @@
 
 The required parts of a class component are:
 	class nameOfClass extends React.Component: example:
-	`class App expends React.Component`
+	```class App expends React.Component```
 
 	The constructor function with super();
 	example:
-	`constructor() {
+	```constructor() {
 		super();
-	}`
+	}```
 
 	the render and return block
 	example: 
-	`render() {
+	```render() {
 		return (
 			<div>Some Thing</div>
 		)
-	}`
+	}```
 
 - [ ] Name at least three lifecycle methods?
 
@@ -34,4 +34,4 @@ Formik allows you to write a simplistic form without having to worry about codin
 
 - [ ] Why do we write tests for our apps?
 
-We test code as a means to have a safety net while refactoring code since tests can act as documentation. 
+We test code as a means to have a safety net while refactoring since tests can act as documentation and through looking at the expected values for each test we can assertain what the expected output is for a particular component or function. 
