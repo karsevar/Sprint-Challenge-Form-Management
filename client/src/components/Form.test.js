@@ -14,6 +14,7 @@ describe('UserForm', () => {
         it('should run when clicked', () => {
             const {getByTestId} = render(<FormikLoginForm />);
             const button = getByTestId('submit');
+            expect(button).toBeTruthy();
             fireEvent.click(button);
         })
     })
