@@ -55,6 +55,7 @@ const FormikLoginForm = withFormik({
             .post('http://localhost:5000/api/register', values)
             .then(res => {
                 resetForm();
+                console.log(res.data);
                 setStatus(res.config.data);
             })
     }
